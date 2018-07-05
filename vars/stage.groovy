@@ -1,7 +1,7 @@
-def call(Map params = [:]) {
+def call(String name, Object block) {
 
     println("Before stage call")
-    def result = steps.stage(params)
+    def result = steps.stage(name, block)
     println("After stage call")
     return result
 
